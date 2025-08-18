@@ -6,22 +6,22 @@ function App() {
         {
             title: "HR Professionals",
             desc: "Connect with HRs to discuss recruitment strategies, policies, and workplace culture.",
-            link: "https://chat.whatsapp.com/your-hr-link",
+            link: "https://chat.whatsapp.com/HEr7DVMf8rO9G5tdkYruG0",
         },
         {
             title: "Jobs",
             desc: "Find and share job opportunities across different industries and locations.",
-            link: "https://chat.whatsapp.com/your-jobs-link",
+            link: "https://chat.whatsapp.com/LDDQkaPpISY37jPhN78WXf",
         },
         {
             title: "Internship",
             desc: "Get internship updates, apply to opportunities, and interact with recruiters.",
-            link: "https://chat.whatsapp.com/your-internship-link",
+            link: "https://chat.whatsapp.com/FqGBBu4IGdiBTZNebtKPPU",
         },
         {
             title: "Govt. Exam Updates",
             desc: "Stay updated with notifications, exam patterns, and preparation tips for government exams.",
-            link: "https://chat.whatsapp.com/your-govt-link",
+            link: "https://chat.whatsapp.com/Jd2Dy6z8PlvBnVKzl2DSMS",
         },
         {
             title: "Real Estate",
