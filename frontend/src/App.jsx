@@ -1,6 +1,19 @@
 import { useState } from 'react'
+import dataimg from './assets/Capture.PNG'
 
 function App() {
+
+    const [fullName, setFullName] = useState("");
+    const [category, setCategory] = useState("");
+    const [otherValue, setOtherValue] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const message = `Hello, here are my details:
+Name: ${fullName}
+Category: ${category} ${otherValue}`;
+        window.open(`https://wa.me/9876543210?text=${encodeURIComponent(message)}`, "_blank");
+    };
 
     const groups = [
         {
@@ -115,6 +128,29 @@ function App() {
                 </div>
             </section>
 
+            <section id='getdata'>
+                <h2>Get Verified Data</h2>
+                <div className='getdiv'>
+                    <img src={dataimg} alt="" />
+                    <form onSubmit={handleSubmit}>
+                        <h3>Fill Form</h3>
+                        <input type="text" placeholder='Full Name' value={fullName} onChange={(e) => setFullName(e.target.value)} required />
+                        <select value={category} onChange={(e) => setCategory(e.target.value)} required>
+                            <option value="">Select Category</option>
+                            <option value="hr">HR's</option>
+                            <option value="student">Student</option>
+                            <option value="college">college</option>
+                            <option value="other">other</option>
+                        </select>
+                        {category === "other" && (
+                            <input type="text" placeholder='Enter your category' value={otherValue} onChange={(e) => setOtherValue(e.target.value)} required />
+                        )}
+                        <input type="submit" className='btn' value="SUBMIT" />
+                    </form>
+
+                </div>
+            </section>
+
             <section id="readytofind">
                 <div>
                     <h2>Ready to Find Your Community?</h2>
@@ -129,10 +165,13 @@ function App() {
                     <h2>WhatsApp Communities</h2>
                     <p>Connecting people through amazing WhatsApp communities worldwide.</p>
                     <div>
-                        <a href="#hero">Home</a>
+                        <a href="#">Home</a>
                         <a href="#whychoose">Why-Choose-us</a>
                         <a href="#group">Our-Group</a>
                     </div>
+                    <hr />
+                    <p>Built for you by <a href="https://www.doltec.in/" target="_blank" rel="noopener noreferrer">DOLTEC.IN</a></p>
+                    <p>🚀 Empowering digital journeys with <a href="https://www.doltec.in/" target="_blank" rel="noopener noreferrer">DOLTEC.IN</a></p>
                 </div>
             </section>
         </>
