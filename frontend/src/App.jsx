@@ -12,7 +12,7 @@ function App() {
         const message = `Hello, here are my details:
 Name: ${fullName}
 Category: ${category} ${otherValue}`;
-        window.open(`https://wa.me/9876543210?text=${encodeURIComponent(message)}`, "_blank");
+        window.open(`https://wa.me/9324504318?text=${encodeURIComponent(message)}`, "_blank");
     };
 
     const groups = [
