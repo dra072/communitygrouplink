@@ -78,7 +78,7 @@ Category: ${category} ${otherValue}`;
         <>
             <section id="hero">
                 <div>
-                    <h1>Discover & Join Curated WhatsApp Communities</h1>
+                    <h1>Community Group Links - Discover & Join WhatsApp Group Links</h1>
                     <p>One-click access to interest-based groups — connect, collaborate & grow.</p>
                     <a href="#group">Browse Group ↓</a>
                 </div>
@@ -131,7 +131,7 @@ Category: ${category} ${otherValue}`;
             <section id='getdata'>
                 <h2>Get Verified Data</h2>
                 <div className='getdiv'>
-                    <img src={dataimg} alt="" />
+                    <img src={dataimg} alt="Data verification form preview" />
                     <form onSubmit={handleSubmit}>
                         <h3>Fill Form</h3>
                         <input type="text" placeholder='Full Name' value={fullName} onChange={(e) => setFullName(e.target.value)} required />
@@ -166,8 +166,8 @@ Category: ${category} ${otherValue}`;
                     <p>Connecting people through amazing WhatsApp communities worldwide.</p>
                     <div>
                         <a href="#">Home</a>
-                        <a href="#whychoose">Why-Choose-us</a>
-                        <a href="#group">Our-Group</a>
+                        <a href="#whychoose">Why Choose us?</a>
+                        <a href="#group">Our Groups</a>
                     </div>
                     <hr />
                     <p>Built for you by <a href="https://www.doltec.in/" target="_blank" rel="noopener noreferrer">DOLTEC.IN</a></p>
